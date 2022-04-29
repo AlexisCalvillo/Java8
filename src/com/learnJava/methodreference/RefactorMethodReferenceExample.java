@@ -17,7 +17,7 @@ public class RefactorMethodReferenceExample {
     public static void main(String[] args) {
 
         System.out.println(geq3.test(StudentDataBase.studentSupplier.get()));
-        
+
         System.out.println(geq3MR.test(StudentDataBase.studentSupplier.get()));
 
     }
