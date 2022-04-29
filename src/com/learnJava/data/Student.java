@@ -52,6 +52,9 @@ public class Student {
 
     List<String> activities = new ArrayList<>();
 
+    public void printListOfActivities(){
+        System.out.println(activities);
+    }
     public List<String> getActivities() {
         return activities;
     }
