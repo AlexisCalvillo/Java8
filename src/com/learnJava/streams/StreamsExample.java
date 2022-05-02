@@ -21,7 +21,13 @@ public class StreamsExample {
 
         //Student namme and there activities in a map
         Map<String, List<String>> studentMap= StudentDataBase.getAllStudents().stream()
+                /*.peek((student) -> {
+                    System.out.println(student);
+                })/*/
                 .filter(gpa3)
+                .peek((student) -> {
+                    System.out.println(student);
+                })//
                 .filter(geq3MR)//.filter(RefactorMethodReferenceExample::greaterThanGradeLevel)
                 .collect(Collectors.toMap(Student::getName,Student::getActivities));
 
