@@ -7,7 +7,7 @@ import java.util.List;
 public class StreamMinMaxExample {
 
     public static int findMax(List<Integer> integerList){
-        return integerList.stream().reduce(Integer.MIN_VALUE0,Integer::max);
+        return integerList.stream().reduce(Integer.MIN_VALUE,Integer::max);
     }
 
     public static int findMin(List<Integer> integerList){
