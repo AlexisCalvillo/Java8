@@ -24,5 +24,5 @@ public class StreamsSumAvgExample {
         System.out.println("The average of notebooks per student is: " + average());
     }
 
-    
+
 }
