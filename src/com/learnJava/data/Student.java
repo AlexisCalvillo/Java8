@@ -2,12 +2,22 @@ package com.learnJava.data;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 public class Student {
     private String name;
     private int gradeLevel;
     private double gpa;
     private String gender;
+    private Optional<Bike> bike = Optional.empty();
+
+    public Optional<Bike> getBike() {
+        return bike;
+    }
+
+    public void setBike(Optional<Bike> bike) {
+        this.bike = bike;
+    }
 
     public void setNoteBooks(int noteBooks) {
         this.noteBooks = noteBooks;
@@ -38,6 +48,19 @@ public class Student {
 
     public Student() {
 
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", gradeLevel=" + gradeLevel +
+                ", gpa=" + gpa +
+                ", gender='" + gender + '\'' +
+                ", bike=" + bike +
+                ", noteBooks=" + noteBooks +
+                ", activities=" + activities +
+                '}';
     }
 
     public Student(String s) {
@@ -87,17 +110,6 @@ public class Student {
 
     public void setActivities(List<String> activities) {
         this.activities = activities;
-    }
-
-    @Override
-    public String toString() {
-        return "Student{" +
-                "name='" + name + '\'' +
-                ", gradeLevel=" + gradeLevel +
-                ", gpa=" + gpa +
-                ", gender='" + gender + '\'' +
-                ", activities=" + activities +
-                '}';
     }
 
 
