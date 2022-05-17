@@ -12,7 +12,7 @@ public interface Interface3 extends Interface2{
 
     @Override
     default void methodB() {
-        System.out.println("Inside interface 3 method B" + Interface3.class);
+        System.out.println("Inside interface 3  method B" + Interface3.class);
     }
 
 
