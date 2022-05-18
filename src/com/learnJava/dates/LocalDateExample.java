@@ -27,5 +27,16 @@ public class LocalDateExample {
         System.out.println("getDayOfYear : " + localDate.getDayOfYear());
 
         System.out.println("Day of Month using get: " + localDate.get(ChronoField.DAY_OF_MONTH));
+
+
+        /**
+         * Modifying localdate
+         */
+
+        System.out.println(localDate.plusDays(365));
+        System.out.println(localDate.plusMonths(365));
+        System.out.println(localDate.plusYears(-4));
+        System.out.println(localDate.minusYears(-4));
+        System.out.println(localDate.withYear(2019));
     }
 }
